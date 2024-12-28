@@ -6,7 +6,7 @@
   --clr-900: hsl(218, 44%, 22%);
 
   --font-family: "Outfit", sans-serif;
-  --font-base: 15px;
+  --font-base: 1rem;
 }
 
 * {
@@ -30,31 +30,31 @@ body {
 .qr-container {
   width: 320px;
   background-color: var(--clr-white);
-  padding: 16px;
-  border-radius: 16px;
+  padding: var(--font-base);
+  border-radius: var(--font-base);
   text-align: center;
 }
 
 .img-container {
-  border-radius: 8px;
+  border-radius: calc(var(--font-base)/2);
   overflow: hidden;
 }
 
 img {
   width: 100%;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: calc(var(--font-base)/2);
+  border-bottom-right-radius: calc(var(--font-base)/2);
 }
 
 .qr-details > h1 {
-  margin: 16px;
-  font-size: 22px;
+  margin: var(--font-base);
+  font-size: 1.375rem;
   font-weight: 700;
   color: var(--clr-900);
 }
 
 .qr-details > p {
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: 400;
   color: var(--clr-500);
 }
